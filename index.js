@@ -1,16 +1,11 @@
-const quotes = [
-    { quote: "To be, or not to be: that is the question.", author: "William Shakespeare" },
-    { quote: "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.", author: "Jane Austen" },
-    { quote: "All happy families are alike; each unhappy family is unhappy in its own way.", author: "Leo Tolstoy" },
-    { quote: "It was the best of times, it was the worst of times.", author: "Charles Dickens" },
-    { quote: "I think therefore I am.", author: "René Descartes" }
-];
+import { quotes } from './quotes.js';
 
 let currentQuoteIndex = 0;
 
 const quoteElement = document.getElementById('quote');
 const guessElement = document.getElementById('guess');
 const resultElement = document.getElementById('result');
+const previousQuoteButton = document.getElementById('previous-quote')
 const nextQuoteButton = document.getElementById('next-quote');
 
 function displayQuote() {
@@ -23,11 +18,16 @@ document.getElementById('submit-guess').addEventListener('click', () => {
     const guess = guessElement.value.trim();
     if (guess.toLowerCase() === quotes[currentQuoteIndex].author.toLowerCase()) {
         resultElement.textContent = 'Correct!';
-        resultElement.style.color = 'green';
+        resultElement.style.color = 'burlywood';
     } else {
         resultElement.textContent = `Wrong! The correct author is ${quotes[currentQuoteIndex].author}.`;
-        resultElement.style.color = 'red';
+        resultElement.style.color = 'burlywood';
     }
+});
+
+previousQuoteButton.addEventListener('click', () => {
+    currentQuoteIndex = (currentQuoteIndex - 1) % quotes.length;
+    displayQuote();
 });
 
 nextQuoteButton.addEventListener('click', () => {

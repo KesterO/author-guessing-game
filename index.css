@@ -5,24 +5,32 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-image: url('Images/openbook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .game-container {
-    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background-image: url('Images/lightbook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1 {
     margin-bottom: 20px;
+    color: rgb(245, 176, 86);
 }
 
 #quote {
-    font-size: 1.2em;
+    font-size: 1.33em;
     margin-bottom: 20px;
+    color: rgb(247, 187, 110);
 }
 
 #guess {
@@ -31,18 +39,19 @@ h1 {
     margin-bottom: 10px;
 }
 
-#submit-guess, #next-quote {
+#submit-guess, #next-quote, #previous-quote {
     padding: 10px 20px;
     margin: 10px 5px;
     border: none;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: burlywood;
+    color: black;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
 
-#submit-guess:hover, #next-quote:hover {
-    background-color: #0056b3;
+#submit-guess:hover, #next-quote:hover, #previous-quote:hover {
+    background-color: rgb(185, 115, 16);
 }
 
 #result {
