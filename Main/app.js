@@ -1,4 +1,4 @@
-import { quotes } from './quotes.js';
+import { quotes } from '../Modules/quotes.js';
 
 let currentQuoteIndex = 0;
 
