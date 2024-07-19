@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Guess the Author</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../Images/fav.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="start-container">
+        <h1>Guess the Author</h1>
+        <form id="start-form">
+            <label id="label" for="num-quotes">Please select number of quotes:</label>
+            <input type="number" id="num-quotes" name="num-quotes" min="1" max="104" required>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('start-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const numQuotes = document.getElementById('num-quotes').value;
+            window.location.href = `index.html?num-quotes=${numQuotes}`;
+        });
+    </script>
+</body>
+</html>

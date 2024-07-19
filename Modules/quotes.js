@@ -1,4 +1,5 @@
 export const quotes = [
+    { quote: "You don't have to be brilliant, only a little bit wiser than the other guys, on average, for a long, long time.", author: "Charlie Munger"},
     { quote: "Whatever the mind of man can conceive and believe, it can achieve.", author: "Napoleon Hill"},
     { quote: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein"},
     { quote: "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.", author: "Robert Frost"},

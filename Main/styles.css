@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.game-container {
+.game-container, .start-container {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,6 +20,23 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+
+.start-container {
+    max-width: 400px;
+}
+
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    background-color: burlywood;
 }
 
 h1 {
@@ -27,10 +44,13 @@ h1 {
     color: rgb(245, 176, 86);
 }
 
-#quote {
+
+
+#quote, #label {
     font-size: 1.33em;
     margin-bottom: 20px;
     color: rgb(247, 187, 110);
+    display: block;
 }
 
 #guess {
@@ -39,22 +59,33 @@ h1 {
     margin-bottom: 10px;
 }
 
-#submit-guess, #next-quote, #previous-quote {
+button {
     padding: 10px 20px;
-    margin: 10px 5px;
     border: none;
     background-color: burlywood;
     color: black;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 1em;
     font-weight: bold;
+    margin-top: 10px; /* Add space above the button */
+    
+    width: 100%; /* Make the button take up full width */
+    max-width: 200px; /* Optional: Set a maximum width for the button */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
 }
 
-#submit-guess:hover, #next-quote:hover, #previous-quote:hover {
+button:hover {
     background-color: rgb(185, 115, 16);
 }
+
 
 #result {
     font-size: 1.1em;
     margin-top: 10px;
+}
+
+#selected {
+    color: rgb(247, 187, 110);
 }
