@@ -46,6 +46,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check [iss
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 ## Contact
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+Your Name - [@yourtwitter](https://x.com/king__milan) - kesterokoh@yahoo.com
 
-Project Link: [https://github.com/KesterO/Guess-the-author.](https:https://github.com/KesterO/Guess-the-author.)
+Project Link: [https://github.com/KesterO/Guess-the-author.](https://github.com/KesterO/Guess-the-author.)
