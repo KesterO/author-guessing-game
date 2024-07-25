@@ -24,7 +24,7 @@ This is an interactive web-based game where players try to guess the authors of 
 
 2. Navigate to the project directory: cd quote-guessing-game
 
-3. Open `index.html` in your web browser
+3. Open `start.html` in your web browser
 
 ## Technologies Used
 - HTML5
