@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the Author</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" href="../Images/fav.jpeg" type="image/x-icon">
 </head>
+
 <body>
     <div class="game-container">
         <h1>Guess the Author:</h1>
@@ -14,11 +16,14 @@
         <input type="text" id="guess" placeholder="Enter author name">
         <button id="submit-guess">Submit</button>
         <p id="result"></p>
-        <button id="previous-quote">Previous Quote</button>
         <button id="next-quote">Next Quote</button>
+        <button id="check-scores" style="display: none;">Check Scores</button>
+        <button onclick="window.history.back();">Go Back</button>
         <p id="result"></p>
-        <p id="score">Correct guesses: 0 / <span id="total-quotes">0</span></p>
+        <div id="timer">Time left: 30s</div>
+        <button id="showHintBtn" style="position: fixed; bottom: 20px; right: 20px;">Show Hint</button>
     </div>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="/src/app.js"></script>
 </body>
+
 </html>

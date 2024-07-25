@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../Images/openbook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-container, .start-container, .score-display {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: url('../Images/lightbook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.start-container {
+    max-width: 400px;
+}
+
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    background-color: burlywood;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgb(245, 176, 86);
+}
+
+#quote, #label {
+    font-size: 1.33em;
+    margin-bottom: 20px;
+    color: rgb(247, 187, 110);
+    display: block;
+}
+
+#guess {
+    padding: 10px;
+    width: calc(100% - 24px);
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: burlywood;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px; /* Add space above the button */
+    
+    width: 100%; /* Make the button take up full width */
+    max-width: 200px; /* Optional: Set a maximum width for the button */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+}
+
+button:hover {
+    background-color: rgb(185, 115, 16);
+}
+
+
+#result, #score-display, #timer {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: rgb(247, 187, 110);
+}
+
+#selected {
+    color: rgb(247, 187, 110);
+}
+
+/* Basic styles for the scoreboard */
+#scoreboard {
+    background-color: rgb(31, 18, 2);
+    color: rgb(247, 187, 110);
+    border: 3px solid rgb(247, 187, 110);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    width: 40%;
+    height: 40%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    display: block;
+}
+
+/* Make the score text bold and bigger */
+#scoreboard h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#final-score {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Button styling */
+.btn {
+    background-color: burlywood;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(185, 115, 16);
+}
+
+/* Hidden class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* Animation class for the scoreboard */
+.show-scoreboard {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    animation: pulse 1s infinite alternate;
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
+    }
+}
+
+#final-score {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffeaa7;
+    text-shadow: 0px 0px 10px rgba(255,234,167,0.8);
+}
+
+.btn {
+    background-color: burlywood;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(22, 13, 1);;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(136, 106, 64);
+    transform: scale(1.1);
+}

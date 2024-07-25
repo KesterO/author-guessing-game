@@ -1,7 +1,7 @@
 # Quote Guessing Game
 
 ## Description
-This is an interactive web-based game where players try to guess the authors of famous quotes. Test your knowledge of literature, philosophy, and history by identifying who said what!
+This is cl Test your knowledge of literature, philosophy, and history by identifying who said what!
 
 ## Features
 - Randomly selected quotes from a diverse collection
