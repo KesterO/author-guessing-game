@@ -20,7 +20,7 @@ This is an interactive web-based game where players try to guess the authors of 
 7. View your final score at the end of the game
 
 ## Installation
-1. Clone this repository: git clone https://github.com/yourusername/quote-guessing-game.git
+1. Clone this repository: git clone https://github.com/KesterO/author-guessing-game
 
 2. Navigate to the project directory: cd quote-guessing-game
 
